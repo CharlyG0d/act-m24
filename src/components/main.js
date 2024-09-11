@@ -18,14 +18,16 @@ class Main extends Component {
         return (
             <main>
                 <img className="avatar" src={userImage.imageUrl} alt={'Foto de ' + userImage.name} style={{ width: userImage.imageSize, height: userImage.imageSize}} />
-                <h2>My name is: {this.state.name}</h2>
+                <h2>Mi nombre es: {this.state.name}</h2>
                 <button onClick={() => this.setState({ name: "Charly" })}> Chance Name</button>
-                <ul>    
-              <li><Card name="HTML" desc="Estructura"/></li>  
-              <li><Card name="CSS" desc="Estilos"/></li>
-              <li><Card name="Javascript" desc="Funciones"/></li>  
-              <li><Card name="React" desc="Base"/></li>  
-                </ul>
+                <ol>  
+                <h3>Canciones favoritas</h3>  
+                    <li><Card name="Scar tissue" band="Red hot chili peppers"/></li>  
+                    <li><Card name="Amarela" band="Sputnik"/></li>
+                    <li><Card name="No es la copa mundial" band="Say ocean "/></li>  
+                    <li><Card name="Know your enemy" band="Green day"/></li>  
+                    <li><Card name="Sleepwalking" band="Bring me the horizon"/></li>  
+                </ol>
 
                 
             </main>

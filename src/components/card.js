@@ -6,12 +6,11 @@ class Card extends Component {
     }
     render(){
         
-        const { name, desc } = this.props;
+        const { name, band } = this.props;
 
         return( 
             <>
-            <h4>Name: {name}</h4>
-            <p>Description: {desc} </p>
+            <h4>{name}. De: {band} <br /></h4>
             
             </>
         )
